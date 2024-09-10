@@ -55,6 +55,10 @@ header  h1, h3{
 header li{
     margin-left: 12px;
 }
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 main p{
     margin-left: 15px;
@@ -63,6 +67,11 @@ main p{
 .skill_cont, .profile_cont, .experience_cont, .formation_cont{
     padding: 0px 15px 10px;
 }
+
+.skill_cont{
+    order: 2;
+}
+
 .skill_cont li{
     list-style:disc
 }
@@ -79,9 +88,25 @@ ul > li > p {
 
 @media (min-width: 768px) {
     header{
-        background-color: aqua
+        flex-direction: row;
+        justify-content: space-around;
     }
-    
+
+    .profile_cont, .experience_cont, .formation_cont{
+         width: 60%;
+    }   
+
+    .skill_cont{
+        order: 1;
+        width: 30%;
+        background-color: rgb(200, 200, 200)
+    }
+
+    .right_side{
+        order: 2;
+        width: 60%;
+        height: fit-content;
+    }
 }
 
 @media (min-width: 1224px) {
