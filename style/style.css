@@ -41,24 +41,19 @@ header{
     width: 100%;
     padding: 30px 0px;
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    flex-direction: column;
 }
 
 header *{
     color: #dadada;
 }
 
-header > div > h1, h3{
+header  h1, h3{
     margin-left:12px;
 }
 
-header > div{
-    width: 50%;
-}
-
 header li{
-    margin-left: 0;
+    margin-left: 12px;
 }
 
 main p{
