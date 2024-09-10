@@ -99,7 +99,8 @@ ul > li > p {
     .skill_cont{
         order: 1;
         width: 30%;
-        background-color: rgb(200, 200, 200)
+        height: 100vh;
+        background-color: rgb(200, 200, 200);
     }
 
     .right_side{
@@ -110,7 +111,45 @@ ul > li > p {
 }
 
 @media (min-width: 1224px) {
-    header{
-        background-color: wheat
+
+    body{
+        background-color: rgb(230, 230, 230);
+    }
+
+    .skill_cont{
+        margin: 30px;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .skill_cont li{
+        line-height: 2.5;
+    }
+
+    .right_side *{
+        line-height: 2.5;
+    }
+
+
+    a{
+        font-size: 18px;
+    }
+
+    li{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    main p{
+        font-size: 18px;
+    }
+
+    ul > li > p {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    h4{
+        font-size: 24px;
     }
 }
