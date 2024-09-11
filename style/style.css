@@ -76,6 +76,10 @@ main p{
     list-style:disc
 }
 
+.skill_cont h2{
+    width: fit-content;
+}
+
 li{
     font-size: 12px;
     margin-left: 20px;
@@ -120,6 +124,14 @@ ul > li > p {
         margin: 30px;
         height: 100%;
         padding: 15px;
+    }
+
+    #skills{
+        display: none
+    } 
+
+    #skills_show{
+        display: block
     }
 
     .skill_cont li{
