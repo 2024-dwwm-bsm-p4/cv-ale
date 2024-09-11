@@ -17,6 +17,7 @@ header.append(switchButton)
 //CREATION PHOTO DESKTOP MODE
 photo.setAttribute("src", "https://picsum.photos/75/75")
 photo.setAttribute("style", "border-radius: 50%")
+photo.setAttribute("alt", "photo de profil")
 header.prepend(photo)
 
 // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
