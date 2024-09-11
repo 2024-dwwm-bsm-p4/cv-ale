@@ -8,6 +8,7 @@
 
 body{
     margin: 0px;
+    background-color: #37474f;
 }
 
 h1{
@@ -34,7 +35,6 @@ h1, h2, h3, h4{
 
 .container{
     width: 100%;
-    height: 100%;
     background-color: #37474f;
     display: flex;
     flex-direction: column;
@@ -109,6 +109,8 @@ ul > li > p {
     }   
 
     .skill_cont{
+        margin: 30px;
+        padding: 15px;
         order: 1;
         width: 30%;
         height: fit-content;
@@ -123,10 +125,6 @@ ul > li > p {
 }
 
 @media (min-width: 1224px) {
-
-    body{
-        background-color: rgb(230, 230, 230);
-    }
 
     header ul, header h1{
         line-height: 2.5;

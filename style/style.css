@@ -9,6 +9,7 @@
 
 body{
     margin: 0px;
+    background-color: #e0e0e0
 }
 
 h1{
@@ -35,7 +36,6 @@ h1, h2, h3, h4{
 
 .container{
     width: 100%;
-    height: 100%;
     background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
@@ -100,6 +100,11 @@ ul > li > p {
 }
 
 @media (min-width: 768px) {
+    
+    body{
+        background-color:#e0e0e0
+    }
+
     header{
         flex-direction: row;
         justify-content: space-around;
@@ -125,10 +130,6 @@ ul > li > p {
 
 @media (min-width: 1224px) {
 
-    body{
-        background-color: #e0e0e0;
-    }
-    
     header ul, header h1{
         line-height: 2.5;
     }
