@@ -130,15 +130,48 @@ ul > li > p {
 
 @media (min-width: 1224px) {
 
+    /* 
+        MARK: dark mode 
+    */
+
+    .title_dark_mode {
+        color : pink
+    }
+
+    .text_dark_mode {
+        color: lime;
+    }
+
+    ion-icon.title_dark_mode:hover{
+        color: white;
+        transform: scale(125%);
+    }
+    
+    .container_dark_mode{
+        background-color: #6d6d6d
+    }
+
+    .bg_dark_mode{
+        background-color:#37474f;
+    }
+    
+    hr.bg_dark_mode{
+        color : #dadada
+    }
+
     header ul, header h1{
         line-height: 2.5;
+    }
+
+    ion-icon:hover{
+        color: #696969;
+        transform: scale(125%);
     }
 
     .skill_cont{
         margin: 30px;
         height: 100%;
         padding: 15px;
-        background-color: #aeaeae76;
     }
 
     #qualities{
