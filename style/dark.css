@@ -4,7 +4,6 @@
     color: #dadada;
     font-size: 12px;
     list-style: none;
-    line-height: 2;
 }
 
 body{
@@ -26,6 +25,11 @@ h3{
 h4{
     font-size: 16px;
     font-weight: normal;
+}
+
+h1, h2, h3, h4{
+    color: #26c6da;
+    margin: 0px
 }
 
 .container{
@@ -91,6 +95,7 @@ li{
 
 ul > li > p {
     font-size: 10px;
+    margin-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -106,7 +111,7 @@ ul > li > p {
     .skill_cont{
         order: 1;
         width: 30%;
-        height: 100vh;
+        height: fit-content;
         background-color: #6d6d6d;
     }
 
@@ -121,6 +126,10 @@ ul > li > p {
 
     body{
         background-color: rgb(230, 230, 230);
+    }
+
+    header ul, header h1{
+        line-height: 2.5;
     }
 
     .skill_cont{
@@ -162,23 +171,15 @@ ul > li > p {
         font-size: 14px;
     }
 
-    h1, h2, h3, h4{
-        color: #26c6da;
-        margin: 0px
+    h4{
+        font-size: 24px;
+        margin: 0;
+        width: fit-content;
     }
 
     h4:hover{
         color: white
     }
 
-    ion-icon{
-        color: #26c6da;
-    }
-
-    h4{
-        font-size: 24px;
-        margin: 0;
-        width: fit-content;
-    }
 
 }
