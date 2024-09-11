@@ -44,7 +44,7 @@ h1, h2, h3, h4{
 
 
 header{
-        background-color:#aeaeae76;
+        background-color:#aeaeae;
         height: fit-content;
         width: 100%;
         padding: 30px 0px;
@@ -60,7 +60,7 @@ ion-icon{
     font-size: 36px;
 }
 
-ion-icon{
+ion-icon, .fa-brands{
     color: #0088a3;
 }
 
@@ -135,15 +135,15 @@ ul > li > p {
     */
 
     .title_dark_mode {
-        color : pink
+        color : #26c6da
     }
 
     .text_dark_mode {
-        color: lime;
+        color: #e0e0e0;
     }
 
     ion-icon.title_dark_mode:hover{
-        color: white;
+        color: #e0e0e0;
         transform: scale(125%);
     }
     
@@ -168,10 +168,17 @@ ul > li > p {
         transform: scale(125%);
     }
 
+    .arrow_down_qualities{
+        font-size: 16px;
+    }
+
     .skill_cont{
         margin: 30px;
         height: 100%;
         padding: 15px;
+        animation: grow ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
 
     #qualities{
@@ -180,6 +187,32 @@ ul > li > p {
 
     #qualities_show{
         display: block
+    }
+    
+    #qualities_show{
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes grow {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     .skill_cont li{
