@@ -15,7 +15,7 @@ header.append(switchButton)
 
 
 //CREATION PHOTO DESKTOP MODE
-photo.setAttribute("src", "https://picsum.photos/100/100")
+photo.setAttribute("src", "https://picsum.photos/75/75")
 photo.setAttribute("style", "border-radius: 50%")
 header.prepend(photo)
 
