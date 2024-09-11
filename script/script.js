@@ -3,6 +3,38 @@ if (window.innerWidth > 1223) {
 const clickTarget = document.querySelector(".skill_cont h4")
 const skills = document.querySelector(".qualities")
 const header = document.querySelector(".header")
+let stylesheet = document.querySelector("link")
+const switchButton = document.createElement("ion-icon")
+const photo = document.createElement("img")
+
+// CREATION BUTTON SWITCH LIGH/DARK
+
+switchButton.setAttribute("name", "contrast-outline")
+switchButton.setAttribute("class", "visual_mode")
+header.append(switchButton)
+
+
+//CREATION PHOTO DESKTOP MODE
+photo.setAttribute("src", "https://picsum.photos/100/100")
+photo.setAttribute("style", "border-radius: 50%")
+header.prepend(photo)
+
+// AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
+const visualMode = document.querySelector(".visual_mode")
+
+visualMode.addEventListener("click", function(e){
+    if(stylesheet.getAttribute("href") === "style/style.css"){
+        stylesheet.setAttribute("href", "style/dark.css")
+    }
+    else{
+        stylesheet.setAttribute("href", "style/style.css")
+    }
+})
+
+visualMode.addEventListener("mouseover", function(e){
+    visualMode.setAttribute("style", "cursor: pointer")
+}
+)
 
 
 clickTarget.addEventListener("click", function(e){
@@ -20,11 +52,6 @@ clickTarget.addEventListener("mouseover", function(e){
 }
 )
 
-const photo = document.createElement("img")
-photo.setAttribute("src", "https://picsum.photos/200/200")
-photo.setAttribute("style", "border-radius: 50%")
-header.prepend(photo)
 
-let headerContent = header.innerHTML
 
 }
