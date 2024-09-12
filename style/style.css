@@ -48,6 +48,10 @@ h1, h2, h3, h4{
     margin: 0px
 }
 
+hr{
+    display: none;
+}
+
 .container{
     width: 100%;
     background-color: var(--background-color);
@@ -62,6 +66,7 @@ h1, h2, h3, h4{
 
 header{
     height: fit-content;
+    text-align: center;
 }
 
 header, footer{
@@ -69,7 +74,6 @@ header, footer{
         width: 100%;
         padding: 30px 0px;
         display: flex;
-        flex-direction: column;
         color: var(--title-color)
 }
 
@@ -122,6 +126,21 @@ li{
 ul > li > p {
     font-size: 10px;
     margin-left: 10px;
+}
+
+footer{
+    flex-direction: column;
+}
+
+.contact{
+    width: 100%;
+    word-wrap: normal;
+}
+
+.link_rs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* MARK: Tablet */
@@ -181,7 +200,10 @@ ul > li > p {
         flex-direction: row;
         align-items: center;
         height: 100vh;
-        background-image: url("")
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .visual_mode{
@@ -264,5 +286,25 @@ ul > li > p {
 
     h4:hover{
         color :var(--hover-color)
+    }
+
+    hr{
+        display: block;
+    }
+
+    footer{
+        align-items: center;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .contact ul li{
+        display: inline;
+    }
+
+    .link_rs{
+        width: 25%;
     }
 }

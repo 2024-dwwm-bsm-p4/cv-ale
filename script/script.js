@@ -1,5 +1,3 @@
-let script = document.querySelector("script")
-
 if (window.innerWidth > 1223) {
 
 const clickTarget = document.querySelector(".skill_cont h4")
