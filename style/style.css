@@ -4,11 +4,14 @@
     --container-color: #aeaeae;
     --text-color: #343434;
     --hover-color: #696969;
+    --main-text-font: "Poppins", sans-serif;
     padding: 0px;
     text-decoration: none;
     color: var(--text-color);
     font-size: 12px;
     list-style: none;
+    font-family: var(--main-text-font);
+    font-weight: 500;
 }
 
 .dark_mode *{
@@ -121,6 +124,7 @@ main p{
 li{
     font-size: 12px;
     margin-left: 20px;
+    line-height: 2;
 }
 
 ul > li > p {
