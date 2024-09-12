@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv-ale</title>
     <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="script/script.js"></script>
+
 </head>
 <body>
     <div class="container">
+
+        <!-- 
+            MARK: Header 
+         -->
         <header class="header">
+
             <div>
                 <h1>
                     Aledorian Legrand
@@ -17,25 +24,20 @@
                     Apprenant Dev web & web mobile
                 </h3>
             </div>
-            <div class="contact">
-                <ul>
-                    <li>🏠 59 boulevard de clocheville 62200 Boulogne sur mer </li>
-                    <li>☎️ 07/70/45/56/05</li>
-                    <li>✉️ aledorianlegrand@gmail.com</li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/aledorian-legrand/" target="_blank">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                        <a href="https://www.github.com/aledorian" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
         </header>
+        
+                    <ion-icon name="contrast-outline" class="visual_mode"></ion-icon>
+        <!-- 
+            MARK: MAIN
+        -->
 
         <main>
             <aside class="skill_cont">
+
+                <!-- 
+                    MARK: Skills
+                -->
 
                 <h2>Compétences</h2>
 
@@ -49,6 +51,10 @@
                     <li>Développer des composants métier côté serveur</li>
                     <li>Documenter le deploiement d'un application</li>
                 </ul>  
+
+                <!-- 
+                    MARK: Qualities
+                -->
 
                 <h4> Savoir être 
                     <ion-icon name="arrow-down-outline" class="arrow_down_qualities">
@@ -69,13 +75,13 @@
                 </ion-icon>
                 </h4>
 
-                <ul class="technos" id="technos")>
-                    <li><ion-icon name="logo-html5"></ion-icon> Html 5</li>
-                    <li><ion-icon name="logo-css3"></ion-icon> CSS3</li>
-                    <li><ion-icon name="logo-nodejs"></ion-icon> Javascript</li>
+                <ul class="technos" id="technos">
+                    <li><i class="fa-brands fa-html5 fa-xl"></i> HTML5</li>
+                    <li><i class="fa-brands fa-css3 fa-xl"></i> CSS3</li>
+                    <li><i class="fa-brands fa-node-js fa-xl"></i> Javascript</li>
                     <li><i class="fa-brands fa-php fa-xl"></i> PHP</li>
-                    <li><i class="fa-brands fa-sass fa-lg"></i> SASS</li>
-                    <li><ion-icon name="logo-github"></ion-icon> GitHub</li>
+                    <li><i class="fa-brands fa-sass fa-xl"></i> SASS</li>
+                    <li><i class="fa-brands fa-github fa-xl"></i> GitHub</li>
                 </ul>
 
             </aside>
@@ -126,9 +132,30 @@
                 </div>
             </div>
         </main>
+
+        <footer>
+            <div class="contact"></div>
+                <ul>
+                    <li>🏠 59 boulevard de clocheville 62200 Boulogne sur mer </li>
+                    <li>☎️ 07/70/45/56/05</li>
+                    <li>✉️ aledorianlegrand@gmail.com</li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/aledorian-legrand/" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="https://www.github.com/aledorian" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
-<script type="module" src="script/script.js"></script>
+
+<!-- 
+    MARK: Script
+-->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://kit.fontawesome.com/b6556afcc9.js" crossorigin="anonymous"></script>

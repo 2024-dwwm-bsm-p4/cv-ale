@@ -19,6 +19,7 @@
     --hover-color: #ffffff;
 }
 
+/* MARK: Main */
 
 body{
     margin: 0px;
@@ -55,17 +56,24 @@ h1, h2, h3, h4{
     align-items: center;
 }
 
+.visual_mode{
+    display: none;
+}
 
 header{
+    height: fit-content;
+}
+
+header, footer{
         background-color:var(--container-color);
-        height: fit-content;
         width: 100%;
         padding: 30px 0px;
         display: flex;
         flex-direction: column;
+        color: var(--title-color)
 }
 
-header *{
+footer li{
     color: var(--title-color)
 }
 
@@ -102,6 +110,10 @@ main p{
     width: fit-content;
 }
 
+.arrow_down_qualities{
+    font-size: 16px;
+}
+
 li{
     font-size: 12px;
     margin-left: 20px;
@@ -111,6 +123,8 @@ ul > li > p {
     font-size: 10px;
     margin-left: 10px;
 }
+
+/* MARK: Tablet */
 
 @media (min-width: 768px) {
     
@@ -128,6 +142,9 @@ ul > li > p {
     }   
 
     .skill_cont{
+        margin: 15px;
+        height: 100%;
+        padding: 15px;
         order: 1;
         width: 30%;
         height: fit-content;
@@ -137,23 +154,41 @@ ul > li > p {
     .right_side{
         order: 2;
         width: 60%;
+        margin-top: 15px;
         height: fit-content;
     }
 }
 
+/* MARK: Desktop*/
+
 @media (min-width: 1224px) {
 
-    header ul, header h1{
-        line-height: 2.5;
+    h1{
+        font-size: 80px;
     }
+
+    h3{
+        font-size: 30px;
+    }
+    
 
     ion-icon:hover{
         color: var(--hover-color);
         transform: scale(125%);
     }
 
-    .arrow_down_qualities{
-        font-size: 16px;
+    header{
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        background-image: url("")
+    }
+
+    .visual_mode{
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 10px;
     }
 
     .skill_cont{
