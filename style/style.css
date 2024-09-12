@@ -1,15 +1,26 @@
 *{
+    --title-color: #0088a3;
+    --background-color: #e0e0e0;
+    --container-color: #aeaeae;
+    --text-color: #343434;
     padding: 0px;
     text-decoration: none;
-    color: #343434;
+    color: var(--text-color);
     font-size: 12px;
     list-style: none;
-
 }
+
+.dark_mode *{
+    --title-color: #26c6da;
+    --background-color: #37474f;
+    --container-color: #6d6d6d;
+    --text-color: #e0e0e0;
+}
+
 
 body{
     margin: 0px;
-    background-color: #e0e0e0
+    background-color: var(--background-color)
 }
 
 h1{
@@ -30,13 +41,13 @@ h4{
 }
 
 h1, h2, h3, h4{
-    color: #0088a3;
+    color: var(--title-color);
     margin: 0px
 }
 
 .container{
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +55,7 @@ h1, h2, h3, h4{
 
 
 header{
-        background-color:#aeaeae;
+        background-color:var(--container-color);
         height: fit-content;
         width: 100%;
         padding: 30px 0px;
@@ -53,7 +64,7 @@ header{
 }
 
 header *{
-    color: #0088a3
+    color: var(--title-color)
 }
 
 ion-icon{
@@ -61,7 +72,7 @@ ion-icon{
 }
 
 ion-icon, .fa-brands{
-    color: #0088a3;
+    color: var(--title-color);
 }
 
 main{
@@ -102,7 +113,7 @@ ul > li > p {
 @media (min-width: 768px) {
     
     body{
-        background-color:#e0e0e0
+        background-color:var(--background-color)
     }
 
     header{
@@ -118,7 +129,7 @@ ul > li > p {
         order: 1;
         width: 30%;
         height: fit-content;
-        background-color: #aeaeae
+        background-color: var(--container-color)
     }
 
     .right_side{
@@ -129,35 +140,6 @@ ul > li > p {
 }
 
 @media (min-width: 1224px) {
-
-    /* 
-        MARK: dark mode 
-    */
-
-    .title_dark_mode {
-        color : #26c6da
-    }
-
-    .text_dark_mode {
-        color: #e0e0e0;
-    }
-
-    ion-icon.title_dark_mode:hover{
-        color: #e0e0e0;
-        transform: scale(125%);
-    }
-    
-    .container_dark_mode{
-        background-color: #6d6d6d
-    }
-
-    .bg_dark_mode{
-        background-color:#37474f;
-    }
-    
-    hr.bg_dark_mode{
-        color : #dadada
-    }
 
     header ul, header h1{
         line-height: 2.5;
@@ -181,37 +163,34 @@ ul > li > p {
         animation-fill-mode: forwards;
     }
 
-    #qualities{
+    #qualities, #technos{
         display: none
     } 
 
-    #qualities_show{
-        display: block
-    }
-    
-    #qualities_show{
-        animation: fadeInAnimation ease 3s;
+    #qualities_show, #technos_show{
+        display: block;
+        animation: grow ease 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
 
-    @keyframes fadeInAnimation {
+    @keyframes grow {
         0% {
-            opacity: 0;
+            transform:scaleY(0)
         }
 
         100% {
-            opacity: 1;
+            transform:scaleY(100%)
         }
     }
 
-    @keyframes grow {
+    @keyframes shrink {
         0% {
-            opacity: 0;
+            transform:scaleY(100%)
         }
 
         100% {
-            opacity: 1;
+            transform:scaleY(0)
         }
     }
 

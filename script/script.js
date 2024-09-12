@@ -1,16 +1,15 @@
 if (window.innerWidth > 1223) {
 
 const clickTarget = document.querySelector(".skill_cont h4")
+const technosTarget = document.querySelector("#technos_title")
 const skills = document.querySelector(".qualities")
+const technos = document.querySelector(".technos")
 const header = document.querySelector(".header")
 const switchButton = document.createElement("ion-icon")
 const photo = document.createElement("img")
-let title = document.querySelectorAll("h1, h2, h3, h4, header li, header ion-icon, .fa-brands")
-let text = document.querySelectorAll("p, main li")
-let container = document.querySelectorAll("header, .skill_cont")
-let main = document.querySelectorAll("main, .right_side hr")
+let html = document.getElementsByTagName("html")
 
-console.log(main);
+console.log(html);
 
 
 
@@ -30,54 +29,9 @@ header.prepend(photo)
 // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
 const visualMode = document.querySelector(".visual_mode")
 
-let mode = "dark"
-
 visualMode.addEventListener("click", function(e){
-    if(mode === "dark"){
-
-        for (let i = 0; i < title.length; i++) {
-            title[i].classList.add("title_dark_mode")
-        }
-
-        for (let j = 0; j < text.length; j++) {
-            text[j].classList.add("text_dark_mode")
-        }
-
-        for (let k = 0; k < container.length; k++) {
-            container[k].classList.add("container_dark_mode");
-        }
-
-        for (let i = 0; i < main.length; i++) {
-            main[i].classList.add("bg_dark_mode")
-        }
-
-        
-        switchButton.classList.add("title_dark_mode")
-       
-
-        mode = "light"
-    }
-    else{
-        for (let i = 0; i < title.length; i++) {
-            title[i].classList.remove("title_dark_mode")
-        }
-
-        for (let j = 0; j < text.length; j++) {
-            text[j].classList.remove("text_dark_mode")
-        }
-
-        for (let k = 0; k < container.length; k++) {
-            container[k].classList.remove("container_dark_mode");
-        }
-
-        for (let i = 0; i < main.length; i++) {
-            main[i].classList.remove("bg_dark_mode")
-        }
-
-        switchButton.classList.remove("title_dark_mode")
-
-        mode = "dark"
-    }
+    html[0].classList.toggle("dark_mode")
+    console.log(html);
 })
 
 visualMode.addEventListener("mouseover", function(e){
@@ -86,21 +40,32 @@ visualMode.addEventListener("mouseover", function(e){
 )
 
 
-clickTarget.addEventListener("click", function(e){
+clickTarget.addEventListener("click", function(e)
+{
     if (skills.id === "qualities")(
         document.getElementById("qualities").id="qualities_show"
     )
     else(
         document.getElementById("qualities_show").id="qualities"
     )
-}
-),
+}),
+
+technosTarget.addEventListener("click", function(e)
+{
+    if (technos.id === "technos")
+        (
+            document.getElementById("technos").id="technos_show"
+        )
+    else
+        (
+            document.getElementById("technos_show").id="technos"
+        )   
+}),
 
 clickTarget.addEventListener("mouseover", function(e){
     clickTarget.setAttribute("style", "cursor: pointer")
-}
-)
-
-
+})
 
 }
+
+
