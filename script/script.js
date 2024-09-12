@@ -9,8 +9,6 @@ const switchButton = document.createElement("ion-icon")
 const photo = document.createElement("img")
 let html = document.getElementsByTagName("html")
 
-console.log(html);
-
 
 
 // CREATION BUTTON SWITCH LIGH/DARK
@@ -67,5 +65,3 @@ clickTarget.addEventListener("mouseover", function(e){
 })
 
 }
-
-
