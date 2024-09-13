@@ -1,349 +1,351 @@
 /* creation variable theme + normalisation des balises */
 
-*{
-    --title-color: #26c6da;
-    --background-color: #37474f;
-    --container-color: #6d6d6d;
-    --text-color: #e0e0e0;
-    --hover-color: #ffffff;
-    --main-text-font: "Poppins", sans-serif;
-    --header-text-color: #FFF;
-    padding: 0px;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 12px;
-    list-style: none;
-    font-family: var(--main-text-font);
-    font-weight: 500;
+* {
+  --title-color: #26c6da;
+  --background-color: #37474f;
+  --container-color: #6d6d6d;
+  --text-color: #e0e0e0;
+  --hover-color: #ffffff;
+  --main-text-font: "Poppins", sans-serif;
+  --header-text-color: #fff;
+  padding: 0px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 12px;
+  list-style: none;
+  font-family: var(--main-text-font);
+  font-weight: 500;
 }
 
-.dark_mode *{
-    --title-color: #0088a3;
-    --background-color: #e0e0e0;
-    --container-color: #aeaeae;
-    --text-color: #343434;
-    --hover-color: #696969;
+.dark_mode * {
+  --title-color: #0088a3;
+  --background-color: #e0e0e0;
+  --container-color: #aeaeae;
+  --text-color: #343434;
+  --hover-color: #696969;
 }
 
 /* Animation setup */
 
-@keyframes slideinright{
-    from{
-        margin-left: 100%;
-    }
-    to{
-        margin-left: 0%;
-    }
+@keyframes slideinright {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-    @keyframes grow {
-        0% {
-            transform:scaleY(0)
-        }
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+  }
 
-        100% {
-            transform:scaleY(1)
-        }
-    }
-
+  100% {
+    transform: scaleY(1);
+  }
+}
 
 /* MARK: Main */
 
-body{
-    margin: 0px;
-    background-color: var(--background-color)
+body {
+  margin: 0px;
+  background-color: var(--background-color);
 }
 
-h1{
-    font-size: 32px;
+h1 {
+  font-size: 32px;
 }
 
-h2{
-    font-size: 25px;
+h2 {
+  font-size: 25px;
 }
 
-h3{
-    font-size: 18px;
+h3 {
+  font-size: 18px;
 }
 
-h4{
-    font-size: 16px;
-    font-weight: normal;
+h4 {
+  font-size: 16px;
+  font-weight: normal;
 }
 
-h1, h3{
-    color: var(--header-text-color)
+h1,
+h3 {
+  color: var(--header-text-color);
 }
 
-h2, h4{
-    color: var(--title-color);
-    margin: 0px
+h2,
+h4 {
+  color: var(--title-color);
+  margin: 0px;
 }
 
-.container{
-    width: 100%;
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  width: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-header{
-    height: fit-content;
-    text-align: center;
+header {
+  height: fit-content;
+  text-align: center;
 }
 
-header, footer{
-    background-color:var(--container-color);
-    width: 100%;
-    padding: 30px 0px;
-    display: flex;
-    color: var(--title-color)
+header,
+footer {
+  background-color: var(--container-color);
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  color: var(--title-color);
 }
 
-.visual_mode{
-    display: none;
+.visual_mode {
+  display: none;
 }
 
-
-
-ion-icon{
-    font-size: 36px;
+ion-icon {
+  font-size: 36px;
 }
 
-ion-icon, .fa-brands{
-    color: var(--title-color);
+ion-icon,
+.fa-brands {
+  color: var(--title-color);
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-main p{
-    margin-left: 15px;
+main p {
+  margin-left: 15px;
 }
 
-hr{
-    display: none;
+hr {
+  display: none;
 }
 
-.skill_cont, .profile_cont, .experience_cont, .formation_cont{
-    padding: 0px 15px 10px;
+.skill_cont,
+.profile_cont,
+.experience_cont,
+.formation_cont {
+  padding: 0px 15px 10px;
 }
 
-.skill_cont{
-    order: 2;
+.skill_cont {
+  order: 2;
 }
 
-.skill_cont h2{
-    width: fit-content;
+.skill_cont h2 {
+  width: fit-content;
 }
 
-.skill_cont li{
-    list-style:disc
+.skill_cont li {
+  list-style: disc;
 }
 
-.arrow_down_qualities{
-    font-size: 16px;
+.arrow_down_qualities {
+  font-size: 16px;
 }
 
-li{
-    font-size: 12px;
-    margin-left: 20px;
-    line-height: 2;
+li {
+  font-size: 12px;
+  margin-left: 20px;
+  line-height: 2;
 }
 
 ul > li > p {
-    font-size: 10px;
-    margin-left: 10px;
+  font-size: 10px;
+  margin-left: 10px;
 }
 
-footer{
-    flex-direction: column;
+footer {
+  flex-direction: column;
 }
 
-footer li{
-    color: var(--title-color)
+footer li {
+  color: var(--title-color);
 }
 
-.contact{
-    width: 100%;
-    word-wrap: normal;
+.contact {
+  width: 100%;
+  word-wrap: normal;
 }
 
-.link_rs{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.link_rs {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 /* MARK: Tablet */
 
 @media (min-width: 768px) {
-    
-    header{
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .profile_cont, .experience_cont, .formation_cont{
-         width: 60%;
-    }   
+  .profile_cont,
+  .experience_cont,
+  .formation_cont {
+    width: 60%;
+  }
 
-    .skill_cont{
-        margin: 15px;
-        height: 100%;
-        padding: 15px;
-        order: 1;
-        width: 30%;
-        background-color: var(--container-color)
-    }
+  .skill_cont {
+    margin: 15px;
+    height: 100%;
+    padding: 15px;
+    order: 1;
+    width: 30%;
+    background-color: var(--container-color);
+  }
 
-    .right_side{
-        order: 2;
-        width: 60%;
-        margin-top: 15px;
-    }
+  .right_side {
+    order: 2;
+    width: 60%;
+    margin-top: 15px;
+  }
 }
-
-
 
 /* 
     MARK: Desktop
 */
 
 @media (min-width: 1224px) {
+  html {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
 
-    html{
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-    }
+  html main,
+  html header,
+  html footer {
+    scroll-snap-align: start;
+  }
 
-    html main, html header, html footer{
-        scroll-snap-align: start;
-    }
+  header {
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
-    header{
-        flex-direction: row;
-        align-items: center;
-        height: 100vh;
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+  h1 {
+    font-size: 80px;
+  }
 
-    h1{
-        font-size: 80px;
-    }
+  h3 {
+    font-size: 30px;
+  }
 
-    h3{
-        font-size: 30px;
-    }
-    
-    ion-icon:hover{
-        color: var(--hover-color);
-        transform: scale(1.25);
-    }
+  ion-icon:hover {
+    color: var(--hover-color);
+    transform: scale(1.25);
+  }
 
-    .visual_mode{
-        display: block;
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
+  .visual_mode {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+  }
 
-    .skill_cont{
-        margin: 30px;
-        height: 100%;
-        padding: 15px;
-    }
+  .skill_cont {
+    margin: 30px;
+    height: 100%;
+    padding: 15px;
+  }
 
-    #qualities, #technos{
-        display: none
-    } 
+  #qualities,
+  #technos {
+    display: none;
+  }
 
-    #qualities_show, #technos_show{
-        display: block;
-        animation: grow ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
+  #qualities_show,
+  #technos_show {
+    display: block;
+    animation: grow ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 
+  .experience_cont.in-view,
+  .profile_cont.in-view {
+    animation: slideinright 2s ease;
+  }
 
-    .experience_cont.in-view, .profile_cont.in-view{
-        animation: slideinright 2s ease;
+  .formation_cont.in-view {
+    animation: fadein 2s ease;
+  }
 
-    }
+  .skill_cont.in-view {
+    animation: grow 2s ease;
+  }
 
-    .formation_cont.in-view{
-        animation: fadein 2s ease;
-    }
+  .skill_cont li {
+    line-height: 2.5;
+  }
 
-    .skill_cont.in-view{
-        animation: grow 2s ease;
-    }
+  .right_side * {
+    line-height: 2.5;
+  }
 
-    .skill_cont li{
-        line-height: 2.5;
-    }
+  li {
+    font-size: 18px;
+  }
 
-    .right_side *{
-        line-height: 2.5;
-    }
+  main p {
+    font-size: 18px;
+  }
 
+  ul > li > p {
+    font-size: 14px;
+  }
 
-    li{
-        font-size: 18px;
-    }
+  h4 {
+    font-size: 24px;
+    margin: 0;
+    width: fit-content;
+  }
 
-    main p{
-        font-size: 18px;
-    }
+  h4:hover {
+    color: var(--hover-color);
+  }
 
-    ul > li > p {
-        font-size: 14px;
-    }
+  hr {
+    display: block;
+  }
 
-    h4{
-        font-size: 24px;
-        margin: 0;
-        width: fit-content;
-    }
+  footer {
+    align-items: center;
+  }
 
-    h4:hover{
-        color :var(--hover-color)
-    }
+  .contact {
+    text-align: center;
+  }
 
-    hr{
-        display: block;
-    }
+  .contact ul li {
+    display: inline;
+  }
 
-    footer{
-        align-items: center;
-    }
-
-    .contact{
-        text-align: center;
-    }
-
-    .contact ul li{
-        display: inline;
-    }
-
-    .link_rs{
-        width: 25%;
-    }
+  .link_rs {
+    width: 25%;
+  }
 }
