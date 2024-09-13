@@ -1,10 +1,11 @@
 *{
-    --title-color: #0088a3;
-    --background-color: #e0e0e0;
-    --container-color: #aeaeae;
-    --text-color: #343434;
-    --hover-color: #696969;
+    --title-color: #26c6da;
+    --background-color: #37474f;
+    --container-color: #6d6d6d;
+    --text-color: #e0e0e0;
+    --hover-color: #ffffff;
     --main-text-font: "Poppins", sans-serif;
+    --header-text-color: #FFF;
     padding: 0px;
     text-decoration: none;
     color: var(--text-color);
@@ -15,11 +16,11 @@
 }
 
 .dark_mode *{
-    --title-color: #26c6da;
-    --background-color: #37474f;
-    --container-color: #6d6d6d;
-    --text-color: #e0e0e0;
-    --hover-color: #ffffff;
+    --title-color: #0088a3;
+    --background-color: #e0e0e0;
+    --container-color: #aeaeae;
+    --text-color: #343434;
+    --hover-color: #696969;
 }
 
 /* MARK: Main */
@@ -41,12 +42,16 @@ h3{
     font-size: 18px;
 }
 
+h1, h3{
+    color: var(--header-text-color)
+}
+
 h4{
     font-size: 16px;
     font-weight: normal;
 }
 
-h1, h2, h3, h4{
+h2, h4{
     color: var(--title-color);
     margin: 0px
 }
@@ -186,6 +191,17 @@ footer{
 
 @media (min-width: 1224px) {
 
+    html{
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    html main, html header, html footer{
+        scroll-snap-align: start;
+    }
+
+
+
     h1{
         font-size: 80px;
     }
@@ -199,7 +215,6 @@ footer{
         color: var(--hover-color);
         transform: scale(125%);
     }
-
     header{
         flex-direction: row;
         align-items: center;
@@ -209,6 +224,7 @@ footer{
         background-size: cover;
         background-position: center;
     }
+
 
     .visual_mode{
         display: block;
@@ -221,9 +237,6 @@ footer{
         margin: 30px;
         height: 100%;
         padding: 15px;
-        animation: grow ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
     }
 
     #qualities, #technos{
@@ -237,24 +250,55 @@ footer{
         animation-fill-mode: forwards;
     }
 
-    @keyframes grow {
-        0% {
-            transform:scaleY(0)
+    @keyframes slideinright{
+        from{
+            margin-left: 100%;
         }
-
-        100% {
-            transform:scaleY(100%)
+        to{
+            margin-left: 0%;
         }
     }
 
-    @keyframes shrink {
-        0% {
-            transform:scaleY(100%)
+    @keyframes fadein{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+        @keyframes grow {
+            0% {
+                transform:scaleY(0)
+            }
+    
+            100% {
+                transform:scaleY(100%)
+            }
+        }
+    
+        @keyframes shrink {
+            0% {
+                transform:scaleY(100%)
+            }
+    
+            100% {
+                transform:scaleY(0)
+            }
         }
 
-        100% {
-            transform:scaleY(0)
-        }
+    .experience_cont.in-view, .profile_cont.in-view{
+        animation: slideinright 2s ease;
+
+    }
+
+    .formation_cont.in-view{
+        animation: fadein 2s ease;
+    }
+
+    .skill_cont.in-view{
+        animation: grow 2s ease;
     }
 
     .skill_cont li{
