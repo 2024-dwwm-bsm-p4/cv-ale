@@ -51,17 +51,7 @@
         }
 
         100% {
-            transform:scaleY(100%)
-        }
-    }
-
-    @keyframes shrink {
-        0% {
-            transform:scaleY(100%)
-        }
-
-        100% {
-            transform:scaleY(0)
+            transform:scaleY(1)
         }
     }
 
@@ -228,7 +218,11 @@ footer li{
     }
 }
 
-/* MARK: Desktop*/
+
+
+/* 
+    MARK: Desktop
+*/
 
 @media (min-width: 1224px) {
 
@@ -261,7 +255,7 @@ footer li{
     
     ion-icon:hover{
         color: var(--hover-color);
-        transform: scale(125%);
+        transform: scale(1.25);
     }
 
     .visual_mode{
