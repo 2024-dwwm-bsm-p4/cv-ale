@@ -245,6 +245,7 @@ footer li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0;
   }
 
   h1 {
@@ -300,11 +301,11 @@ footer li {
   }
 
   .skill_cont li {
-    line-height: 2.5;
+    line-height: 2;
   }
 
   .right_side * {
-    line-height: 2.5;
+    line-height: 2;
   }
 
   li {
