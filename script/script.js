@@ -19,6 +19,7 @@ visualMode.addEventListener("mouseover", function(e){
 }
 )
 
+// Extend qualities / technos
 
 clickTarget.addEventListener("click", function(e)
 {

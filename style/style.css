@@ -1,3 +1,5 @@
+/* creation variable theme + normalisation des balises */
+
 *{
     --title-color: #26c6da;
     --background-color: #37474f;
@@ -23,6 +25,47 @@
     --hover-color: #696969;
 }
 
+/* Animation setup */
+
+@keyframes slideinright{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+    @keyframes grow {
+        0% {
+            transform:scaleY(0)
+        }
+
+        100% {
+            transform:scaleY(100%)
+        }
+    }
+
+    @keyframes shrink {
+        0% {
+            transform:scaleY(100%)
+        }
+
+        100% {
+            transform:scaleY(0)
+        }
+    }
+
+
 /* MARK: Main */
 
 body{
@@ -42,22 +85,18 @@ h3{
     font-size: 18px;
 }
 
-h1, h3{
-    color: var(--header-text-color)
-}
-
 h4{
     font-size: 16px;
     font-weight: normal;
 }
 
+h1, h3{
+    color: var(--header-text-color)
+}
+
 h2, h4{
     color: var(--title-color);
     margin: 0px
-}
-
-hr{
-    display: none;
 }
 
 .container{
@@ -68,9 +107,6 @@ hr{
     align-items: center;
 }
 
-.visual_mode{
-    display: none;
-}
 
 header{
     height: fit-content;
@@ -78,16 +114,18 @@ header{
 }
 
 header, footer{
-        background-color:var(--container-color);
-        width: 100%;
-        padding: 30px 0px;
-        display: flex;
-        color: var(--title-color)
-}
-
-footer li{
+    background-color:var(--container-color);
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
     color: var(--title-color)
 }
+
+.visual_mode{
+    display: none;
+}
+
+
 
 ion-icon{
     font-size: 36px;
@@ -106,6 +144,10 @@ main p{
     margin-left: 15px;
 }
 
+hr{
+    display: none;
+}
+
 .skill_cont, .profile_cont, .experience_cont, .formation_cont{
     padding: 0px 15px 10px;
 }
@@ -114,12 +156,12 @@ main p{
     order: 2;
 }
 
-.skill_cont li{
-    list-style:disc
-}
-
 .skill_cont h2{
     width: fit-content;
+}
+
+.skill_cont li{
+    list-style:disc
 }
 
 .arrow_down_qualities{
@@ -141,6 +183,10 @@ footer{
     flex-direction: column;
 }
 
+footer li{
+    color: var(--title-color)
+}
+
 .contact{
     width: 100%;
     word-wrap: normal;
@@ -152,14 +198,11 @@ footer{
     justify-content: space-around;
 }
 
+
 /* MARK: Tablet */
 
 @media (min-width: 768px) {
     
-    body{
-        background-color:var(--background-color)
-    }
-
     header{
         flex-direction: row;
         justify-content: space-around;
@@ -175,7 +218,6 @@ footer{
         padding: 15px;
         order: 1;
         width: 30%;
-        height: fit-content;
         background-color: var(--container-color)
     }
 
@@ -183,7 +225,6 @@ footer{
         order: 2;
         width: 60%;
         margin-top: 15px;
-        height: fit-content;
     }
 }
 
@@ -200,21 +241,6 @@ footer{
         scroll-snap-align: start;
     }
 
-
-
-    h1{
-        font-size: 80px;
-    }
-
-    h3{
-        font-size: 30px;
-    }
-    
-
-    ion-icon:hover{
-        color: var(--hover-color);
-        transform: scale(125%);
-    }
     header{
         flex-direction: row;
         align-items: center;
@@ -225,6 +251,18 @@ footer{
         background-position: center;
     }
 
+    h1{
+        font-size: 80px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+    
+    ion-icon:hover{
+        color: var(--hover-color);
+        transform: scale(125%);
+    }
 
     .visual_mode{
         display: block;
@@ -250,43 +288,6 @@ footer{
         animation-fill-mode: forwards;
     }
 
-    @keyframes slideinright{
-        from{
-            margin-left: 100%;
-        }
-        to{
-            margin-left: 0%;
-        }
-    }
-
-    @keyframes fadein{
-        from{
-            opacity: 0;
-        }
-        to{
-            opacity: 1;
-        }
-    }
-    
-        @keyframes grow {
-            0% {
-                transform:scaleY(0)
-            }
-    
-            100% {
-                transform:scaleY(100%)
-            }
-        }
-    
-        @keyframes shrink {
-            0% {
-                transform:scaleY(100%)
-            }
-    
-            100% {
-                transform:scaleY(0)
-            }
-        }
 
     .experience_cont.in-view, .profile_cont.in-view{
         animation: slideinright 2s ease;
@@ -305,14 +306,10 @@ footer{
         line-height: 2.5;
     }
 
-
     .right_side *{
         line-height: 2.5;
     }
 
-    a{
-        font-size: 18px;
-    }
 
     li{
         font-size: 18px;
