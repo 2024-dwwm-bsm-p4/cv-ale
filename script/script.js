@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
       visualMode.setAttribute("style", "cursor: pointer");
     });
 
+    console.log();
+    
+
     // Extend qualities / technos
 
     clickTarget.addEventListener("click", function (e) {
