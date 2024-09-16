@@ -162,6 +162,10 @@ hr {
   font-size: 16px;
 }
 
+.icon_tech{
+  height: 28px;
+}
+
 li {
   font-size: 12px;
   margin-left: 20px;
@@ -178,9 +182,9 @@ footer {
   color: var(--title-color);
 }
 
-/* footer li {
+footer li {
   color: var(--title-color);
-} */
+}
 
 .contact {
   width: 100%;
@@ -269,16 +273,17 @@ footer {
     font-size: 30px;
   }
 
-  ion-icon:hover {
-    color: var(--hover-color);
-    transform: scale(1.25);
-  }
-
+  
   .visual_mode {
     display: block;
     position: fixed;
     right: 10px;
     top: 10px;
+  }
+
+  .visual_mode:hover{
+    color: var(--hover-color);
+    transform: scale(1.25);
   }
 
   main{
