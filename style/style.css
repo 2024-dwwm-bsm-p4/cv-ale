@@ -225,6 +225,23 @@ footer li {
     width: 60%;
     margin-top: 15px;
   }
+
+  footer {
+    align-items: center;
+  }
+
+  .contact ul li {
+    display: inline;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .link_rs {
+    width: 25%;
+  }
+
 }
 
 /*
@@ -363,19 +380,4 @@ html footer {
     display: block;
   }
 
-  footer {
-    align-items: center;
-  }
-
-  .contact {
-    text-align: center;
-  }
-
-  .contact ul li {
-    display: inline;
-  }
-
-  .link_rs {
-    width: 25%;
-  }
 }
