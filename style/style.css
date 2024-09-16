@@ -18,9 +18,9 @@
 }
 
 .light_mode * {
-  --title-color: #0088a3;
+  --title-color: #00424D;
   --background-color: #e0e0e0;
-  --container-color: #aeaeae;
+  --container-color: #CFCFCF;
   --text-color: #343434;
   --hover-color: #696969;
   --header-text-color: #fff;
