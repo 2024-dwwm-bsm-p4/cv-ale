@@ -238,9 +238,12 @@ footer li {
   }
 
   html main,
-  html header,
-  html footer {
-    scroll-snap-align: start;
+  html header {
+  scroll-snap-align: start;
+  }
+
+html footer {
+  scroll-snap-align: end;
   }
 
   header {
@@ -296,13 +299,13 @@ footer li {
     padding: 15px;
   }
 
-  #qualities,
-  #technos {
+  .qualities,
+  .technos {
     display: none;
   }
 
-  #qualities_show,
-  #technos_show {
+  .qualities_show,
+  .technos_show {
     display: block;
     animation: grow ease 3s;
     animation-iteration-count: 1;
