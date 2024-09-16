@@ -279,9 +279,13 @@ footer li {
     top: 10px;
   }
 
+  main{
+    height: 100vh;
+  }
+
   .skill_cont {
     margin: 30px;
-    height: 100%;
+    height: fit-content;
     padding: 15px;
   }
 
