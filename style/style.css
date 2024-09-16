@@ -81,6 +81,13 @@ h4 {
   margin: 0px;
 }
 
+header {
+  color: var(--header-text-color);
+  height: fit-content;
+  text-align: center;
+  padding: 15px;
+}
+
 .container {
   width: 100%;
   background-color: var(--background-color);
@@ -89,14 +96,8 @@ h4 {
   align-items: center;
 }
 
-header {
-  color: var(--header-text-color);
-  height: fit-content;
-  text-align: center;
-}
-
 header p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 #scroll_button{
