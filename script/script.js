@@ -25,11 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     technosTarget.addEventListener("click", function (e) {
       technos.classList.toggle("technos_show")
-    }),
-
-    clickTarget.addEventListener("mouseover", function (e) {
-      clickTarget.setAttribute("style", "cursor: pointer");
-    });
+    })
 
     // Use Intersection Observer to determine if objects are within the viewport
     const observer = new IntersectionObserver((entries) => {

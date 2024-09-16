@@ -299,6 +299,10 @@ html footer {
     padding: 15px;
   }
 
+  h2{
+    cursor: pointer
+  }
+
   .qualities,
   .technos {
     display: none;
