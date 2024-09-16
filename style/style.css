@@ -103,6 +103,10 @@ header {
   text-align: center;
 }
 
+#scroll_button{
+  display: none;
+}
+
 header,
 footer {
   background-color: var(--container-color);
@@ -245,6 +249,13 @@ footer li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  #scroll_button {
+    display: inline;
+    font-size: 3em;
+    position: absolute;
+    bottom: 50px;
   }
 
   h1 {
