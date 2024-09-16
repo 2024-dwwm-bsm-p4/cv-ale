@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth > 1223) {ctor("#qualities_title");
+  if (window.innerWidth > 1223) {
+    const clickTarget = document.querySelector("#qualities_title");
     const technosTarget = document.querySelector("#technos_title");
     const skills = document.querySelector(".qualities");
     const technos = document.querySelector(".technos");

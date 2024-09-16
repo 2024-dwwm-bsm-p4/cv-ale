@@ -222,7 +222,7 @@ footer li {
   }
 }
 
-/* 
+/*
     MARK: Desktop
 */
 
@@ -277,7 +277,7 @@ footer li {
   }
 
   main{
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .skill_cont {
