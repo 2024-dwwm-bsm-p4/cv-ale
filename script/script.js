@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const technosTarget = document.querySelector("#technos_title");
     const skills = document.querySelector(".qualities");
     const technos = document.querySelector(".technos");
-    const html = document.getElementsByTagName("html");
+    const body = document.getElementsByTagName("body");
 
     // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
     const visualMode = document.querySelector(".visual_mode");
 
     visualMode.addEventListener("click", function (e) {
-      html[0].classList.toggle("dark_mode");
+      body[0].classList.toggle("light_mode");
     });
 
     visualMode.addEventListener("mouseover", function (e) {
