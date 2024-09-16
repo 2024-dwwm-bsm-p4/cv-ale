@@ -16,10 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     visualMode.addEventListener("mouseover", function (e) {
       visualMode.setAttribute("style", "cursor: pointer");
     });
-
-    console.log();
     
-
     // Extend qualities / technos
 
     clickTarget.addEventListener("click", function (e) {
