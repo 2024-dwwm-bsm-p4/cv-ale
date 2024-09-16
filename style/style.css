@@ -332,13 +332,13 @@ footer li {
     font-size: 14px;
   }
 
-  h4 {
+  h2 {
     font-size: 24px;
     margin: 0;
     width: fit-content;
   }
 
-  h4:hover {
+  h2:hover {
     color: var(--hover-color);
   }
 
