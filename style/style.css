@@ -23,6 +23,7 @@
   --container-color: #aeaeae;
   --text-color: #343434;
   --hover-color: #696969;
+  --header-text-color: #fff;
 }
 
 /* Animation setup */
@@ -110,7 +111,6 @@ footer {
   width: 100%;
   padding: 30px 0px;
   display: flex;
-  color: var(--title-color);
 }
 
 .visual_mode {
@@ -175,11 +175,12 @@ ul > li > p {
 
 footer {
   flex-direction: column;
-}
-
-footer li {
   color: var(--title-color);
 }
+
+/* footer li {
+  color: var(--title-color);
+} */
 
 .contact {
   width: 100%;
@@ -247,6 +248,10 @@ footer li {
     background-size: cover;
     background-position: center;
     padding: 0;
+  }
+
+  header h1, header p, #scroll_button {
+    color : var(--header-text-color)
   }
 
   #scroll_button {
