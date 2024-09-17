@@ -274,15 +274,16 @@ html footer {
     padding: 0;
   }
 
-  header h1, header p, #scroll_button {
+  header h1, header p, .scroll_button {
     color : var(--header-text-color)
   }
 
-  #scroll_button {
+  .scroll_button {
+    width: 64px;
     display: inline;
-    font-size: 3em;
     position: absolute;
     bottom: 50px;
+    fill: var(--header-text-color);
   }
 
   h1 {
