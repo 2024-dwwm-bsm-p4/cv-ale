@@ -274,7 +274,7 @@ html footer {
     padding: 0;
   }
 
-  header h1, header p, .scroll_button {
+  header h1, header p {
     color : var(--header-text-color)
   }
 
