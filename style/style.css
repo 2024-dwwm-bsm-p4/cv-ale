@@ -13,6 +13,7 @@
   --box-shadow: 2px 2px 8px #333 ;
   --scroll-bar-color: #00424D;
   --scroll-bar-progress-color: #fff;
+  --header-background: url("https://images.pexels.com/photos/13280349/pexels-photo-13280349.jpeg");
   padding: 0px;
   text-decoration: none;
   color: var(--text-color);
@@ -34,6 +35,7 @@
   --title-shadow-desktop: 2px 2px 4px #000;
   --scroll-bar-color: #fff;
   --scroll-bar-progress-color: #00424D;
+  --header-background: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
   animation: fadein 2s ease;
 }
 
@@ -279,7 +281,7 @@ footer li {
     flex-direction: row;
     align-items: center;
     height: 100vh;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
+    background-image: var(--header-background);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
