@@ -321,7 +321,8 @@ footer li {
     right: 10px;
     top: 10px;
     width: 32px;
-    fill: var(--title-color)
+    fill: var(--title-color);
+    z-index: 99;
   }
 
   .visual-mode:hover{

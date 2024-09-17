@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth > 1223) {
+    
+
     const clickTarget = document.querySelector("#qualitiesTitle");
     const technosTarget = document.querySelector("#technosTitle");
     const skills = document.querySelector(".qualities");
@@ -19,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     visualMode.addEventListener("click", function (e) {
         body[0].classList.toggle("light-mode");
-        body[0].classList.toggle("anim-night");
         body[0].classList.toggle("dark-mode")
+        body[0].classList.toggle("anim-night");
 
         if (localStorage.getItem('mode')=== "dark") {
           localStorage.setItem("mode", 'light')
@@ -81,5 +84,5 @@ document.addEventListener("DOMContentLoaded", () => {
     particlesJS.load('particles-js', 'assets/particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
-
+  }
 });
