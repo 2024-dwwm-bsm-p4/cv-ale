@@ -78,4 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add the observer to each of those elements
     allAnimatedElements.forEach((element) => observer.observe(element));
 
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+
 });
