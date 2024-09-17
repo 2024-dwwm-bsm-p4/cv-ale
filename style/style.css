@@ -101,7 +101,7 @@ header p {
   font-size: 18px;
 }
 
-#scroll_button{
+.scroll_button{
   display: none;
 }
 
