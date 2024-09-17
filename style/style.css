@@ -259,20 +259,7 @@ footer li {
 */
 
 @media (min-width: 1224px) {
-  html {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-  }
 
-  html main,
-  html header {
-    scroll-snap-align: start;
-  }
-
-  html footer {
-    scroll-snap-align: end;
-  }
 
  body::-webkit-scrollbar{
     width: 5px;
@@ -284,6 +271,8 @@ footer li {
     border-radius: 50px ;
     background-color: var(--scroll-bar-progress-color);
   }
+
+
 
 
   header {
@@ -367,7 +356,7 @@ footer li {
   }
 
   .skill-cont.in-view {
-    animation: grow 2s ease;
+    animation: fadein 2s ease;
   }
 
   .skill-cont li {

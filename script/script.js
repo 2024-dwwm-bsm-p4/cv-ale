@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const skills = document.querySelector(".qualities");
     const technos = document.querySelector(".technos");
     const body = document.getElementsByTagName("body");
+    const scrollArrow = document.querySelector(".scroll-button");
 
     // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
     const visualMode = document.querySelector(".visual-mode");
@@ -22,9 +23,23 @@ document.addEventListener("DOMContentLoaded", () => {
       skills.classList.toggle("qualities-show")
     }),
 
+
     technosTarget.addEventListener("click", function (e) {
       technos.classList.toggle("technos-show")
     })
+
+    const smoothScroll = () => {
+      const main = document.getElementById("main");
+      main.scrollIntoView({
+        block: 'start',
+        behavior: "smooth"
+      })
+    }
+
+    scrollArrow.addEventListener("click", (e) => {
+      smoothScroll()
+    })
+    
 
     // Use Intersection Observer to determine if objects are within the viewport
     const observer = new IntersectionObserver((entries) => {
