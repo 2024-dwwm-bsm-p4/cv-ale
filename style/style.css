@@ -17,7 +17,8 @@
   padding: 0px;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 24px;
   list-style: none;
   font-family: var(--main-text-font);
   font-weight: 500;
@@ -36,7 +37,11 @@
   --scroll-bar-color: #fff;
   --scroll-bar-progress-color: #00424D;
   --header-background: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
-  animation: fadein 2s ease;
+  animation: fadein 5s ease;
+}
+
+.anim-night{
+  animation: fadein 5s ease;
 }
 
 /* Animation setup */
@@ -174,13 +179,13 @@ hr {
 }
 
 li {
-  font-size: 12px;
+  font-size: 20px;
   margin-left: 20px;
-  line-height: 2;
+  line-height: 30px;
 }
 
 ul > li > p {
-  font-size: 10px;
+  font-size: 16px;
   margin-left: 10px;
 }
 
@@ -263,7 +268,7 @@ footer li {
 @media (min-width: 1224px) {
 
 
- body::-webkit-scrollbar{
+  body::-webkit-scrollbar{
     width: 5px;
     height: 0px;
     background-color: var(--scroll-bar-color);
@@ -273,9 +278,6 @@ footer li {
     border-radius: 50px ;
     background-color: var(--scroll-bar-progress-color);
   }
-
-
-
 
   header {
     flex-direction: row;
@@ -299,6 +301,7 @@ footer li {
     position: absolute;
     bottom: 50px;
     fill: var(--header-text-color);
+    cursor: pointer;
   }
 
   h1 {
@@ -362,7 +365,7 @@ footer li {
   }
 
   .skill-cont li {
-    line-height: 2;
+    line-height: 30px;
   }
 
   .right-side * {
@@ -370,15 +373,16 @@ footer li {
   }
 
   li {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   main p {
     font-size: 18px;
+    margin-top: 10px;
   }
 
   ul > li > p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   h2 {

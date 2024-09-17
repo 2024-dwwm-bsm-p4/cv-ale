@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const visualMode = document.querySelector(".visual-mode");
 
     visualMode.addEventListener("click", function (e) {
-      body[0].classList.toggle("light-mode");
+        body[0].classList.toggle("light-mode");
+        body[0].classList.toggle("anim-night")
     });
 
     visualMode.addEventListener("mouseover", function (e) {
