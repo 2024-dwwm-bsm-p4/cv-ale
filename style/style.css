@@ -37,11 +37,11 @@ body * {
   --scroll-bar-color: #fff;
   --scroll-bar-progress-color: #00424D;
   --header-background: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
-  animation: fadein 3s ease;
+  animation: fadein 1s ease;
 }
 
 .anim-night{
-  animation: fadein 3s ease;
+  animation: fadein 1s ease;
 }
 
 /* Animation setup */
