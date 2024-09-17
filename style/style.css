@@ -89,16 +89,17 @@ header {
   padding: 15px;
 }
 
+
+header p {
+  font-size: 18px;
+}
+
 .container {
   width: 100%;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-header p {
-  font-size: 18px;
 }
 
 .scroll_button{
@@ -153,12 +154,17 @@ hr {
   list-style: disc;
 }
 
-.arrow_down_qualities {
-  font-size: 16px;
+.arrow_down_qualities{
+  height: 20px;
+  fill: var(--title-color);
 }
 
 .icon_tech{
   height: 28px;
+}
+
+.right_side h2:first-of-type{
+  margin-top: 10px;
 }
 
 li {
@@ -319,10 +325,6 @@ html footer {
     padding: 15px;
   }
 
-  h2{
-    cursor: pointer
-  }
-
   .qualities,
   .technos {
     display: none;
@@ -374,9 +376,14 @@ html footer {
     margin: 0;
     width: fit-content;
   }
+  
+  h2:not(:first-of-type){
+    cursor: pointer
+  }
 
-  h2:hover {
+  h2:not(:first-of-type):hover, h2:hover svg {
     color: var(--hover-color);
+    fill: var(--hover-color);
   }
 
   hr {
