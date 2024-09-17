@@ -11,6 +11,8 @@
   --text-shadow: 2px 2px 4px #000;
   --title-shadow: 2px 2px 4px #000;
   --box-shadow: 2px 2px 8px #333 ;
+  --scroll-bar-color: #00424D;
+  --scroll-bar-progress-color: #fff;
   padding: 0px;
   text-decoration: none;
   color: var(--text-color);
@@ -30,6 +32,9 @@
   --text-shadow: 4px 4px 4px #A2E7F1;
   --title-shadow: 2px 2px 4px #d4d4d4;
   --title-shadow-desktop: 2px 2px 4px #000;
+  --scroll-bar-color: #fff;
+  --scroll-bar-progress-color: #00424D;
+  animation: fadein 2s ease;
 }
 
 /* Animation setup */
@@ -268,6 +273,18 @@ footer li {
   html footer {
     scroll-snap-align: end;
   }
+
+ body::-webkit-scrollbar{
+    width: 5px;
+    height: 0px;
+    background-color: var(--scroll-bar-color);
+  }
+  
+  body::-webkit-scrollbar-thumb{
+    border-radius: 50px ;
+    background-color: var(--scroll-bar-progress-color);
+  }
+
 
   header {
     flex-direction: row;

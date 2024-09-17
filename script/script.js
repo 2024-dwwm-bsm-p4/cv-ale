@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth > 1223) {
-    const clickTarget = document.querySelector("#qualities-title");
-    const technosTarget = document.querySelector("#technos-title");
+    const clickTarget = document.querySelector("#qualitiesTitle");
+    const technosTarget = document.querySelector("#technosTitle");
     const skills = document.querySelector(".qualities");
     const technos = document.querySelector(".technos");
     const body = document.getElementsByTagName("body");
@@ -43,9 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add the observer to each of those elements
     allAnimatedElements.forEach((element) => observer.observe(element));
-  } else {
-    window.addEventListener("resize", (e) => {
-      location.reload();
-    });
-  }
+
 });
