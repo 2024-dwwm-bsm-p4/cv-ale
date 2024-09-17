@@ -121,11 +121,6 @@ ion-icon {
   font-size: 36px;
 }
 
-ion-icon,
-.fa-brands {
-  color: var(--title-color);
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -179,11 +174,15 @@ ul > li > p {
 
 footer {
   flex-direction: column;
-  color: var(--title-color);
 }
 
 footer li {
   color: var(--title-color);
+}
+
+.footer_link{
+  height: 32px;
+  fill: var(--title-color);
 }
 
 .contact {
@@ -300,10 +299,12 @@ html footer {
     position: fixed;
     right: 10px;
     top: 10px;
+    width: 32px;
+    fill: var(--title-color)
   }
 
   .visual_mode:hover{
-    color: var(--hover-color);
+    fill: var(--hover-color);
     transform: scale(1.25);
   }
 
