@@ -6,12 +6,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.getElementsByTagName("body");
     const scrollArrow = document.querySelector(".scroll-button");
 
+    if (localStorage.getItem('mode') !== "dark") {
+      body[0].classList.remove("dark-mode")
+      body[0].classList.add("light-mode")
+    }else{
+      body[0].classList.add("dark-mode")
+      body[0].classList.remove("light-mode")
+    }
+
     // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
     const visualMode = document.querySelector(".visual-mode");
 
     visualMode.addEventListener("click", function (e) {
         body[0].classList.toggle("light-mode");
-        body[0].classList.toggle("anim-night")
+        body[0].classList.toggle("anim-night");
+        body[0].classList.toggle("dark-mode")
+
+        if (localStorage.getItem('mode')=== "dark") {
+          localStorage.setItem("mode", 'light')
+        }else{
+          localStorage.setItem("mode", 'dark')
+        }
+
+        console.log(localStorage);
+        
+
     });
 
     visualMode.addEventListener("mouseover", function (e) {
