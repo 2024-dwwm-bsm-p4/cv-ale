@@ -20,7 +20,7 @@
   font-weight: 500;
 }
 
-.light_mode * {
+.light-mode * {
   --title-color: #00424D;
   --background-color: #e0e0e0;
   --container-color: #CFCFCF;
@@ -101,7 +101,7 @@ header p {
   align-items: center;
 }
 
-.scroll_button{
+.scroll-button{
   display: none;
 }
 
@@ -113,7 +113,7 @@ footer {
   display: flex;
 }
 
-.visual_mode {
+.visual-mode {
   display: none;
 }
 
@@ -134,35 +134,35 @@ hr {
   display: none;
 }
 
-.skill_cont,
-.profile_cont,
-.experience_cont,
-.formation_cont {
+.skill-cont,
+.profile-cont,
+.experience-cont,
+.formation-cont {
   padding: 0px 15px 10px;
 }
 
-.skill_cont {
+.skill-cont {
   order: 2;
 }
 
-.skill_cont h2 {
+.skill-cont h2 {
   width: fit-content;
 }
 
-.skill_cont li {
+.skill-cont li {
   list-style: disc;
 }
 
-.arrow_down_qualities{
+.arrow-down-qualities{
   height: 20px;
   fill: var(--title-color);
 }
 
-.icon_tech{
+.icon-tech{
   height: 28px;
 }
 
-.right_side section:first-of-type h2{
+.right-side section:first-of-type h2{
   margin-top: 30px;
 }
 
@@ -185,7 +185,7 @@ footer li {
   color: var(--title-color);
 }
 
-.footer_link{
+.footer-link{
   height: 32px;
   fill: var(--title-color);
 }
@@ -195,7 +195,7 @@ footer li {
   word-wrap: normal;
 }
 
-.link_rs {
+.link-rs {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -209,13 +209,13 @@ footer li {
     justify-content: space-around;
   }
 
-  .profile_cont,
-  .experience_cont,
-  .formation_cont {
+  .profile-cont,
+  .experience-cont,
+  .formation-cont {
     width: 60%;
   }
 
-  .skill_cont {
+  .skill-cont {
     margin: 15px;
     height: 100%;
     padding: 15px;
@@ -224,7 +224,7 @@ footer li {
     background-color: var(--container-color);
   }
 
-  .right_side {
+  .right-side {
     order: 2;
     width: 60%;
     margin-top: 15px;
@@ -243,7 +243,7 @@ footer li {
     width: auto;
   }
 
-  .link_rs {
+  .link-rs {
     width: 25%;
   }
 
@@ -257,15 +257,16 @@ footer li {
   html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
 
   html main,
   html header {
-  scroll-snap-align: start;
+    scroll-snap-align: start;
   }
 
-html footer {
-  scroll-snap-align: end;
+  html footer {
+    scroll-snap-align: end;
   }
 
   header {
@@ -284,8 +285,8 @@ html footer {
     text-shadow : var(--title-shadow-desktop);
   }
 
-  .scroll_button {
-    width: 64px;
+  .scroll-button {
+    width: 40px;
     display: inline;
     position: absolute;
     bottom: 50px;
@@ -301,7 +302,7 @@ html footer {
   }
 
   
-  .visual_mode {
+  .visual-mode {
     display: block;
     position: fixed;
     right: 10px;
@@ -310,7 +311,7 @@ html footer {
     fill: var(--title-color)
   }
 
-  .visual_mode:hover{
+  .visual-mode:hover{
     fill: var(--hover-color);
     transform: scale(1.25);
   }
@@ -319,7 +320,7 @@ html footer {
     min-height: 100vh;
   }
 
-  .skill_cont {
+  .skill-cont {
     margin: 30px;
     height: fit-content;
     padding: 15px;
@@ -331,32 +332,32 @@ html footer {
     display: none;
   }
 
-  .qualities_show,
-  .technos_show {
+  .qualities-show,
+  .technos-show {
     display: block;
     animation: grow ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
 
-  .experience_cont.in-view,
-  .profile_cont.in-view {
+  .experience-cont.in-view,
+  .profile-cont.in-view {
     animation: slideinright 2s ease;
   }
 
-  .formation_cont.in-view {
+  .formation-cont.in-view {
     animation: fadein 2s ease;
   }
 
-  .skill_cont.in-view {
+  .skill-cont.in-view {
     animation: grow 2s ease;
   }
 
-  .skill_cont li {
+  .skill-cont li {
     line-height: 2;
   }
 
-  .right_side * {
+  .right-side * {
     line-height: 2;
   }
 

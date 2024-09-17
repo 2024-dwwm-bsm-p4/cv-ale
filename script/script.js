@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1223) {
-    const clickTarget = document.querySelector("#qualities_title");
-    const technosTarget = document.querySelector("#technos_title");
+    const clickTarget = document.querySelector("#qualities-title");
+    const technosTarget = document.querySelector("#technos-title");
     const skills = document.querySelector(".qualities");
     const technos = document.querySelector(".technos");
     const body = document.getElementsByTagName("body");
 
     // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
-    const visualMode = document.querySelector(".visual_mode");
+    const visualMode = document.querySelector(".visual-mode");
 
     visualMode.addEventListener("click", function (e) {
-      body[0].classList.toggle("light_mode");
+      body[0].classList.toggle("light-mode");
     });
 
     visualMode.addEventListener("mouseover", function (e) {
@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Extend qualities / technos
 
     clickTarget.addEventListener("click", function (e) {
-      skills.classList.toggle("qualities_show")
+      skills.classList.toggle("qualities-show")
     }),
 
     technosTarget.addEventListener("click", function (e) {
-      technos.classList.toggle("technos_show")
+      technos.classList.toggle("technos-show")
     })
 
     // Use Intersection Observer to determine if objects are within the viewport
