@@ -11,7 +11,6 @@ body * {
   --text-shadow: 2px 2px 4px #000;
   --title-shadow: 2px 2px 4px #000;
   --box-shadow: 2px 2px 8px #333 ;
-  --header-background: url("https://c.pxhere.com/photos/36/2c/Desktop_Wallpaper_Golden_Hour_Mountain_Night_panorama_scenery_Snow_Stars-1614505.jpg!d");
   padding: 0px;
   text-decoration: none;
   color: var(--text-color);
@@ -32,7 +31,6 @@ body * {
   --text-shadow: 4px 4px 4px #A2E7F1;
   --title-shadow: 2px 2px 4px #d4d4d4;
   --title-shadow-desktop: 2px 2px 4px #000;
-  --header-background: url("https://upload.wikimedia.org/wikipedia/commons/0/0e/Terragen_render.jpg");
   animation: fadein 2s ease;
 }
 
@@ -98,7 +96,11 @@ header {
   text-align: center;
   padding: 15px;
   text-shadow: var(--title-shadow);
-  background-image: var(--header-background)
+  background-image:url("../img/dark_mode_header_background.webp")
+}
+
+.light-mode header{
+  background-image: url("../img/light_mode_header_background.webp");
 }
 
 
@@ -280,7 +282,6 @@ footer li {
     flex-direction: row;
     align-items: center;
     height: 100vh;
-    background-image: var(--header-background);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -307,11 +308,6 @@ footer li {
 
   .header p{
     font-size: 30px;
-  }
-
-  
-  .visual-mode {
-
   }
 
   .visual-mode:hover{
@@ -402,7 +398,6 @@ footer li {
     z-index: 3;
     position: relative;
     top: 0;
-    /* background-color: aqua; */
   }
 
   #particles-js{
