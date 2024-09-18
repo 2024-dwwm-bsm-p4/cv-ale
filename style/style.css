@@ -80,10 +80,9 @@ body {
   background-color: black;
 }
 
-h1 {
+.header h1 {
   font-size: 32px;
   animation: grow 1s ease;
-
 }
 
 h2 {
@@ -99,15 +98,13 @@ header {
   text-align: center;
   padding: 15px;
   text-shadow: var(--title-shadow);
-  word-wrap: break-word;
   background-image: var(--header-background)
 }
 
 
-header p {
+.header p {
   font-size: 18px;
   animation: slideinright 2s ease;
-  overflow-x: hidden; 
 }
 
 .container {
@@ -274,7 +271,7 @@ footer li {
 @media (min-width: 1224px) {
 
 
-  header {
+  .header {
     flex-direction: row;
     align-items: center;
     height: 100vh;
@@ -285,7 +282,7 @@ footer li {
     padding: 0;
   }
 
-  header h1, header p {
+  .header h1, .header p {
     color : var(--header-text-color);
     text-shadow : var(--title-shadow-desktop);
   }
@@ -299,11 +296,11 @@ footer li {
     cursor: pointer;
   }
 
-  h1 {
+  .header h1 {
     font-size: 80px;
   }
 
-  header p{
+  .header p{
     font-size: 30px;
   }
 
