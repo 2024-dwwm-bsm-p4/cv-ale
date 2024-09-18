@@ -31,11 +31,11 @@ body * {
   --text-shadow: 4px 4px 4px #A2E7F1;
   --title-shadow: 2px 2px 4px #d4d4d4;
   --title-shadow-desktop: 2px 2px 4px #000;
-  animation: fadein 2s ease;
+  animation: fadein 1.5s ease;
 }
 
 .anim-night{
-  animation: fadein 2s ease;
+  animation: fadein 1.5s ease;
 }
 
 /* Animation setup */
