@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     visualMode.addEventListener("click", function (e) {
         body[0].classList.toggle("light-mode");
-        body[0].classList.toggle("dark-mode")
         body[0].classList.toggle("anim-night");
 
         if (localStorage.getItem('mode')=== "dark") {
