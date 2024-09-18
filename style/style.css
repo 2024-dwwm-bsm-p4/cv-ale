@@ -82,7 +82,7 @@ body {
 
 .header h1 {
   font-size: 32px;
-  animation: grow 1s ease;
+  animation: grow 2s ease;
 }
 
 h2 {
@@ -128,7 +128,12 @@ footer {
 }
 
 .visual-mode {
-  display: none;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  fill: var(--title-color);
+  z-index: 99;
 }
 
 ion-icon {
@@ -306,13 +311,7 @@ footer li {
 
   
   .visual-mode {
-    display: block;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    width: 32px;
-    fill: var(--title-color);
-    z-index: 99;
+
   }
 
   .visual-mode:hover{

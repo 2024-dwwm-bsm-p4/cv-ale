@@ -1,25 +1,30 @@
+
+const clickTarget = document.querySelector("#qualitiesTitle");
+const technosTarget = document.querySelector("#technosTitle");
+const skills = document.querySelector(".qualities");
+const technos = document.querySelector(".technos");
+const body = document.getElementsByTagName("body");
+const scrollArrow = document.querySelector(".scroll-button");
+
+
+
+// AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
+const visualMode = document.querySelector(".visual-mode");
+
+visualMode.addEventListener("click", function (e) {
+  body[0].classList.toggle("light-mode");
+  body[0].classList.toggle("anim-night");
+        
+  if (localStorage.getItem('mode')=== "dark") {
+    localStorage.setItem("mode", 'light')
+  }else{
+    localStorage.setItem("mode", 'dark')
+  }
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1223) {
-
-
-    const clickTarget = document.querySelector("#qualitiesTitle");
-    const technosTarget = document.querySelector("#technosTitle");
-    const skills = document.querySelector(".qualities");
-    const technos = document.querySelector(".technos");
-    const body = document.getElementsByTagName("body");
-    const scrollArrow = document.querySelector(".scroll-button");
-
-    // function checking visual mode 
-    const checkMode = () => {
-      if(localStorage.getItem("mode") === "dark")
-        {
-        particlesJS.load('particles-js', 'assets/particles_dark.json', function() {
-          console.log('callback - particles.js config loaded')})
-        }else{
-        particlesJS.load('particles-js', 'assets/particles.json', function() {
-          console.log('callback - particles.js config loaded')
-      })}
-    }
 
     if (localStorage.getItem('mode') !== "dark") {
       body[0].classList.remove("dark-mode")
@@ -28,27 +33,24 @@ document.addEventListener("DOMContentLoaded", () => {
       body[0].classList.add("dark-mode")
       body[0].classList.remove("light-mode")
     }
-
-    checkMode();
-
-    // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
-    const visualMode = document.querySelector(".visual-mode");
-
-    visualMode.addEventListener("click", function (e) {
-        body[0].classList.toggle("light-mode");
-        body[0].classList.toggle("anim-night");
-        
-        if (localStorage.getItem('mode')=== "dark") {
-          localStorage.setItem("mode", 'light')
-        }else{
-          localStorage.setItem("mode", 'dark')
-        }
+    
+    // function checking visual mode 
+    const checkMode = () => {
+      if(localStorage.getItem("mode") === "dark")
+        {
+          particlesJS.load('particles-js', 'assets/particles_dark.json', function() {
+            console.log('callback - particles.js config loaded')})
+    }else{
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded')
+    })}
+  }
+  
+      visualMode.addEventListener("click", (e) => {
         checkMode();
-
-        console.log(localStorage);
-
-
-    });
+      })
+  
+    checkMode();
 
     visualMode.addEventListener("mouseover", function (e) {
       visualMode.setAttribute("style", "cursor: pointer");
