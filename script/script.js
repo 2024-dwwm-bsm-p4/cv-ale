@@ -22,17 +22,15 @@ visualMode.addEventListener("click", function (e) {
   }
 });
 
+if (localStorage.getItem('mode') !== "dark") {
+  body[0].classList.add("light-mode")
+}else{
+  body[0].classList.remove("light-mode")
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1223) {
 
-    if (localStorage.getItem('mode') !== "dark") {
-      body[0].classList.remove("dark-mode")
-      body[0].classList.add("light-mode")
-    }else{
-      body[0].classList.add("dark-mode")
-      body[0].classList.remove("light-mode")
-    }
     
     // function checking visual mode 
     const checkMode = () => {
