@@ -90,6 +90,5 @@ visualMode.addEventListener("click", (e) => {
 
     // Add the observer to each of those elements
     allAnimatedElements.forEach((element) => observer.observe(element));
-
   }
 });
