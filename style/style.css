@@ -16,7 +16,6 @@ body * {
   color: var(--text-color);
   line-height: 24px;
   list-style: none;
-  font-display: "Tahoma";
   font-family: var(--main-text-font);
   font-weight: 500;
   
