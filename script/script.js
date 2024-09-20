@@ -27,7 +27,9 @@ visualMode.addEventListener("click", function (e) {
 document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth > 1223) {
     // function checking visual mode
+
     const checkMode = () => {
+    // check which Json load 
       if (localStorage.getItem("mode") === "dark") {
         particlesJS.load(
           "particles-js",
@@ -48,11 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     checkMode();
-
-    visualMode.addEventListener("mouseover", function (e) {
-      visualMode.setAttribute("style", "cursor: pointer");
-    });
-
     // Extend qualities / technos
 
     clickTarget.addEventListener("click", function (e) {
@@ -61,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
       technosTarget.addEventListener("click", function (e) {
         technos.classList.toggle("technos-show");
       });
+
+    // function to enable smooth scroll with header button
 
     const smoothScroll = () => {
       const main = document.getElementById("main");
