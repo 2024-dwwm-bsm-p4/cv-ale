@@ -138,10 +138,6 @@ footer {
   z-index: 99;
 }
 
-ion-icon {
-  font-size: 36px;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -349,6 +345,11 @@ footer span svg {
     position: relative;
   }
 
+  main p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
   .skill-cont {
     margin: 30px;
     height: fit-content;
@@ -395,10 +396,6 @@ footer span svg {
     font-size: 20px;
   }
 
-  main p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
 
   ul > li > p {
     font-size: 18px;

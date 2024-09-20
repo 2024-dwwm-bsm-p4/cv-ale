@@ -1,13 +1,9 @@
 const clickTarget = document.querySelector("#qualitiesTitle");
 const technosTarget = document.querySelector("#technosTitle");
-
 const skills = document.querySelector(".qualities");
 const technos = document.querySelector(".technos");
 const body = document.getElementsByTagName("body");
-const scrollArrow = document.querySelector(".scroll-button");
-
-console.log(clickTarget.classList);
-console.log(scrollArrow.classList);
+const scrollArrow = document.querySelector(".scroll-button")
 
 // AJOUT FUNCTION ONCLICK DARK/LIGHT MODE
 const visualMode = document.querySelector(".visual-mode");
